@@ -14,9 +14,59 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Order summary card</title>
   </head>
-  <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+  <body
+    class="bg-pale-blue h-screen flex items-center justify-center bg-mobile md:bg-desktop bg-no-repeat bg-contain"
+  >
+    <main
+      class="min-w-[327px] max-w-[450px] rounded-[20px] shadow-box bg-white text-center mx-6"
+    >
+      <img
+        src="./images/illustration-hero.svg"
+        alt="illustration hero"
+        class="w-full rounded-t-[20px] mb-8 md:mb-11"
+      />
+
+      <div class="px-8 pb-8 md:px-12 md:pb-12">
+        <h1 class="text-dark-blue text-[22px] md:text-[28px] font-black mb-4">
+          Order Summary
+        </h1>
+
+        <p
+          class="text-desaturated-blue text-[15px] md:text-base leading-[25px] md:leading-[26px] mb-6 md:mb-5"
+        >
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <div
+          class="flex items-center justify-between p-4 md:p-6 bg-very-pale-blue rounded-[11px] mb-6 md:mb-8"
+        >
+          <div class="flex items-center gap-5">
+            <img src="./images/icon-music.svg" alt="icon music" />
+            <div class="flex flex-col items-center gap-1 text-sm md:text-base">
+              <h2 class="text-dark-blue font-black">Annual Plan</h2>
+              <p class="text-desaturated-blue">$59.99/year</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="underline font-bold text-[13px] md:text-sm text-bright-blue hover:text-[#766cf1] hover:no-underline transition-all"
+            >Change</a
+          >
+        </div>
+
+        <a
+          href="#"
+          class="block bg-bright-blue shadow-button mb-6 py-4 rounded-[11px] text-white text-[15px] font-black hover:bg-[#766cf1] transition-colors"
+          >Proceed to Payment
+        </a>
+
+        <a
+          href="#"
+          class="text-desaturated-blue text-[15px] font-black hover:text-dark-blue transition-colors"
+          >Cancel Order</a
+        >
+      </div>
+    </main>
   </body>
 </html>
